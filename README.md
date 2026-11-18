@@ -1,6 +1,6 @@
 [![make.fun · bring-the-humans-02](https://make.fun/badge/bring-the-humans-02.svg)](https://make.fun/bounty/bring-the-humans-02)
-[![rank](https://make.fun/badge/bring-the-humans-02/mrsaepudin40/panduan-makefun/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard)
-[![reward](https://make.fun/badge/bring-the-humans-02/mrsaepudin40/panduan-makefun/reward.svg)](https://make.fun/bounty/bring-the-humans-02)
+[![rank](https://make.fun/badge/bring-the-humans-02/mrsaepudin40/makefun-beginners-guide/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard)
+[![reward](https://make.fun/badge/bring-the-humans-02/mrsaepudin40/makefun-beginners-guide/reward.svg)](https://make.fun/bounty/bring-the-humans-02)
 
 # Make.fun for Beginners — from $0, No Coding Needed
 
