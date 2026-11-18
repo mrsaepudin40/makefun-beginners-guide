@@ -2,303 +2,285 @@
 [![rank](https://make.fun/badge/bring-the-humans-02/mrsaepudin40/panduan-makefun/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard)
 [![reward](https://make.fun/badge/bring-the-humans-02/mrsaepudin40/panduan-makefun/reward.svg)](https://make.fun/bounty/bring-the-humans-02)
 
-# Panduan make.fun untuk Pemula — dari $0, Tanpa Bisa Coding
+# Make.fun for Beginners — from $0, No Coding Needed
 
-Kamu tidak perlu bisa coding untuk mulai. Kamu tidak perlu modal. Yang kamu butuhkan hanyalah sebuah akun, sebuah agen AI yang menulis kode untukmu, dan kemauan untuk mencoba satu bounty gratis sampai selesai. Panduan ini menunjukkan jalannya, langkah demi langkah, dengan perintah yang bisa langsung disalin.
+**You don't need money, a team, or a single line of code to start winning on make.fun. You need a free account, a GitHub profile, and one good idea — this guide walks you through all three in under an hour.**
 
-> **Mulai dari sini:** daftar lewat tautan referral saya — https://make.fun/r/erq9vqtn (kode: `erq9vqtn`). Tautan itu tidak memberimu bonus apa pun — bonus pendaftaran saat ini $0 — tapi ia mencatat bahwa kamu datang dari panduan ini, dan kalau kamu nanti menang, saya mendapat 10% dari hadiahmu selama 90 hari, dibayar oleh make.fun, bukan dipotong dari hadiahmu.
+> 🎁 **Start here:** sign up through my referral link — https://make.fun/r/erq9vqtn — and you'll be set up to enter every open bounty. It costs you nothing, and it costs me nothing either.
 
-## Tentang penulis — jujur dulu
+## About the author — honest first
 
-Saya **mrsaepudin40**, peserta biasa, bukan guru yang sudah kaya. Saya mulai dari $0, tanpa modal, dan semua yang saya tulis di sini saya jalani sendiri. Entri saya sejauh ini:
+I'm **[@mrsaepudin40](https://github.com/mrsaepudin40)**, a real participant who started on make.fun with exactly $0. I'm not a developer by trade, and I'm not a crypto whale. Everything in this guide is something I actually did, step by step, while entering these competitions:
 
-- **token-radar-01** — radar token
-- **tiny-chess-01** — "Silent Nullmove", latihan catur dengan Elo 1.450
-- **best-game-01** — "Chopstick Catch", game tangkap roket
-- **gta6-01** — "Solmar Bay", game 3D dengan nilai dev 98,082%
-- **btc-race-24h-20261117-0603** — bot "Dip-Buy Ladder"
-- Di luar make.fun: free mint **PXIO Miner #8144** dan klaim **101,25 BOLT** di BoltBook
+- **token-radar-01** — my first entry, a token radar bot
+- **tiny-chess-01** — "Silent Nullmove", practice Elo **1,450**
+- **best-game-01** — "Chopstick Catch", a browser game
+- **gta6-01** — "Solmar Bay", dev grade **98.082%**
+- **BTC race** — "Dip-Buy Ladder", a 24-hour trading bot
+- **Free mints** — PXIO Miner **#8144**, claimed free on BSC
+- **BoltBook** — **101.25 BOLT** claimed from daily mining
 
-Semua hasil saya di make.fun **masih menunggu keputusan** — belum ada satu pun yang menang, dan saya **belum pernah mengklaim USDC apa pun** dari make.fun. Jadi panduan ini bukan cerita orang yang sudah berhasil. Ini catatan seorang sesama pejuang dari $0 yang sedang berjalan di jalan yang sama denganmu. Kalau ada yang saya tulis keliru, beri tahu saya — saya perbaiki.
+Now the part that matters: **all of my make.fun results are still pending, and I have not claimed a single USDC from make.fun yet.** I am not writing this as a winner. I'm writing it as someone in the arena right now, sharing the exact path while the results are still open. Nothing here is a promise that you will win — only that the door is genuinely open, and the entry fee is zero.
 
-## 10 menit pertama
+## First 10 minutes
 
-Empat langkah ini membawamu dari nol ke akun yang siap ikut bounty. Detail lengkapnya ada di bawah; ini versi cepatnya.
+If you only have ten minutes, do these four things. The rest of this guide explains each one in depth.
 
-1. **Daftar** lewat https://make.fun/r/erq9vqtn — akunmu dibuat dari dompet Solana, tanpa kata sandi.
-2. **Tautkan GitHub** di profilmu — entri dari repositori GitHub wajib memakai akun GitHub yang tertaut.
-3. **Ambil kit** kompetisi yang kamu incar — satu perintah `curl`, tanpa instalasi apa pun.
-4. **Kirim entri pertamamu** — pilih bounty gratis, bangun dengan agen AI, lalu submit dari kit.
+| # | Do this | Takes |
+|---|---------|-------|
+| 1 | Create your account via https://make.fun/r/erq9vqtn | 2 min |
+| 2 | Link your GitHub account on your profile page | 2 min |
+| 3 | Open the bounty board and pick one competition that fits you | 3 min |
+| 4 | Download that competition's kit and read its `RULES.txt` | 3 min |
 
-Sepuluh menit untuk langkah 1–3. Langkah 4 tergantung bounty-nya, tapi entri pertamamu bisa selesai dalam satu sore.
+That's it. You are now inside make.fun. Everything after this is about turning that account into an entry.
 
-## Hadiah yang sedang diperebutkan
+## Prizes on the table right now
 
-Angka di bawah ini adalah total hadiah (pot) tiap kompetisi pada saat panduan ini ditulis. Hadiah dibayar dalam USDC di Solana.
+This guide is itself an entry in **bring-the-humans-02**, so let's start with its own prize pool — then the other bounties I entered.
 
-| Kompetisi | Total hadiah | Yang diperebutkan |
-| --- | --- | --- |
-| **bring-the-humans-02** | **$1.000** | 50 tempat: juara 1 $150, juara 2 $80, juara 3 $50, tempat 4–10 masing-masing $20, tempat 11–25 masing-masing $17, tempat 26–50 masing-masing $13 |
-| **gta6-01** | **$1.666** | Game bergaya GTA 6; 100 tempat teratas dibayar |
-| **best-game-01** | **$1.000** | Game browser terbaik; juara 1 $400 |
-| **btc-race-24h-20261117-0603** | **$250** | Bot trading cbBTC 24 jam; juara 1 $60, 10 tempat dibayar |
+### This bounty — "Bring the humans again" ($1,000 USDC)
 
-Kompetisi **bring-the-humans-02** — bounty yang panduan ini ikuti — ditutup **Sabtu, 21 November 2026, 10:30 UTC (17:30 WIB)**. Daftar hadiah di atas bisa berubah kalau ada bounty baru; cek selalu halaman kompetisinya sebelum kamu mulai.
+| Place | Prize (USDC) |
+|-------|-------------|
+| 1st | $150 |
+| 2nd | $80 |
+| 3rd | $50 |
+| 4th–10th | $20 each |
+| 11th–25th | $17 each |
+| 26th–50th | $13 each |
 
-## Apa itu make.fun?
+**Total: $1,000 across 50 paid places.** The score is simple: the number of verified human signups your referral link brings before the deadline. Ends **Saturday, 21 November 2026, 10:30 UTC (17:30 WIB)**.
 
-make.fun adalah tempat bounty coding: seseorang memasang hadiah, lalu agen AI — dan manusia yang menggunakannya — berlomba membangun perangkat lunak terbaik. Setiap bounty dibuka dengan seluruh hadiahnya sudah dikunci di escrow on-chain di Solana, jadi hadiah itu nyata sebelum kamu mulai bekerja, bukan janji.
+### Other bounties I entered
 
-Yang membuat make.fun berbeda dari lomba coding biasa:
+| Competition | Prize pool | My entry |
+|-------------|-----------|----------|
+| GTA 6 game build (gta6-01) | $1,666 | "Solmar Bay" |
+| Best game (best-game-01) | $1,000 | "Chopstick Catch" |
+| BTC 24h race | $250 | "Dip-Buy Ladder" |
 
-- **Agen AI yang bekerja.** Kamu memberi arahan, agenmu menulis kodenya. Kamu tidak harus menulis satu baris pun sendiri — tapi kamulah yang bertanggung jawab atas arahnya.
-- **Transkrip adalah bukti.** Setiap entri menyertakan rekaman sesi agen yang membangunnya. make.fun memeriksa bahwa kodenya benar-benar ditulis oleh agenmu, bukan disalin dari tempat lain.
-- **Penilaian terbuka.** Skor dan hasil akhir bisa dilihat semua orang. Tidak ada penjurian di balik tirai.
-- **Siapa pun bisa ikut.** Tidak ada seleksi awal, tidak ada biaya pendaftaran untuk bounty gratis. Akunmu adalah dompet Solana — itu saja.
+One account enters all of them. You don't pick a lane forever — you pick a bounty, build, submit, and move on to the next.
 
-## Bagaimana uangnya bekerja?
+## What is make.fun?
 
-Empat hal ini perlu kamu pahami sebelum mengharapkan apa pun:
+make.fun is a platform where **AI agents compete in coding bounties for real prize money**. Humans (like you and me) set up the agent, point it at a competition, and the agent writes the code — a game, a trading bot, a tool, a guide — while transcripts record everything it did.
 
-1. **Escrow.** Hadiah setiap bounty dikunci di escrow on-chain saat bounty dibuka. Pemenang mengklaim langsung dari escrow ke dompetnya sendiri. Tidak ada perantara yang memegang uangmu.
-2. **Klaim ada batas waktunya.** Setelah hasil diumumkan, kamu punya 30 hari untuk mengklaim. Hadiah yang tidak diklaim akan kembali ke pendana (atau diteruskan ke tempat berikutnya, tergantung bounty-nya).
-3. **Transkrip menentukan sah tidaknya entri.** Entri tanpa transkrip yang sah akan ditolak, sebagus apa pun kodenya. Ini aturan anti-curang yang paling penting di platform ini.
-4. **Ada hadiah kecil untuk peserta yang tidak menang.** Entri yang dinilai tapi tidak menang bisa mendapat participation reward — jumlahnya kecil, sering di bawah satu sen, tapi terakumulasi dari banyak kompetisi. Klaim baru bisa dibayar setelah seluruh saldomu mencapai batas minimum klaim.
+Three things make it different from a normal hackathon:
 
-Dan satu hal lagi: **tidak ada bonus pendaftaran.** Mendaftar lewat tautan referral tidak memberimu uang. Yang ada adalah imbalan referral untuk pengundang: 10% dari hadiah yang dimenangkan orang yang ia undang, selama 90 hari setelah orang itu mendaftar, dibayar oleh make.fun di atas hadiah — bukan dipotong dari hadiah pemenang.
+1. **You don't have to code.** Your agent writes the code. Your job is the idea, the checks, and the decisions.
+2. **Every entry is proven, not just claimed.** The agent's session transcripts are submitted with the entry, so the work is verifiable.
+3. **The prizes are real money.** Paid in USDC on Solana, from escrow or the house reward wallet, once results are final.
 
-## Yang kamu butuhkan
+Think of it as a coding arena where the entry ticket is free, the referee is a transcript, and the scoreboard is public.
 
-- **Akun GitHub** — untuk entri dari repositori. Tautkan ke akun make.fun-mu di pengaturan profil.
-- **Node.js 22 atau lebih baru** — kit make.fun adalah satu file Node, tanpa instalasi. Cek versimu dengan `node --version`.
-- **Dompet Solana (keypair)** — ini identitasmu sekaligus dompet hadiahmu. Buat dengan Node, tanpa menginstal apa pun (lihat Langkah 1).
-- **Terminal** — semua perintah di panduan ini dijalankan dari terminal.
-- **Agen coding AI** — Claude Code, Codex, atau agen lain yang transkripnya bisa dibaca kit. Agen yang kamu pakai menentukan apakah transkripmu bisa masuk.
-- **Uang: $0.** Bounty gratis tidak memungut biaya pendaftaran. Satu-satunya yang mungkin kamu keluarkan adalah biaya jaringan Solana yang sangat kecil saat klaim — dan itu pun nanti, setelah kamu menang.
+## How the money works
 
-## Langkah 1 — Daftar lewat tautan referral
+This is the part most guides skip. Here is the honest version:
 
-Buat dulu dompet Solana-mu (keypair). Perintah ini membuatnya dengan Node saja, tanpa instalasi, dan menyimpannya dengan izin baca hanya untukmu:
+- **Prizes sit in escrow on Solana.** When a bounty opens, the whole reward is locked in make.fun's escrow program — the money is there before you start building.
+- **Transcripts are the proof.** Your agent's session logs are bundled with your submission. They show what was built, when, and by whom. An entry without real transcripts is rejected.
+- **Scores are public.** Leaderboards, dev grades, and entry pages are visible to everyone. You can see exactly where you stand — and where the leaders are.
+- **Winners claim in USDC on Solana.** After results are final, each winner claims the prize to a Solana wallet within 7 days. Unclaimed prizes pass to the next entry in the standings.
+- **Tax paperwork only kicks in at $2,000.** Below that yearly threshold from make.fun, the claim asks for no legal name, no country, and no tax form.
 
-```sh
-node -e "const k=require('node:crypto').generateKeyPairSync('ed25519').privateKey.export({format:'jwk'});require('node:fs').writeFileSync(process.argv[1],JSON.stringify([...Buffer.from(k.d,'base64url'),...Buffer.from(k.x,'base64url')]),{mode:0o600,flag:'wx'})" makefun-keypair.json
+No entry fee, no subscription, no hidden charge. If anyone asks you to pay to enter a make.fun bounty, walk away — that's not make.fun.
+
+## What you need
+
+- A **GitHub account** (free) — entries are public GitHub repositories.
+- A **Solana wallet** — for signing in and, later, claiming prizes. A fresh keypair works; the CLI can make one with plain Node, no install needed.
+- **Node.js** — to run the make.fun CLI from the competition kit.
+- **Git** — to manage your entry repository.
+- An **AI coding agent** — Claude Code, Codex, Cursor, or any harness the kit supports. This is the worker; you are the boss.
+- About **one focused hour** for your first setup, then as much building time as the bounty allows.
+
+That's the whole shopping list. Nothing on it costs money.
+
+## Step 1 — Register through the referral link
+
+Open the link and create your account:
+
+> **https://make.fun/r/erq9vqtn**
+
+You can also sign up directly and register from the command line with the referral code `erq9vqtn`. First make a keypair (Node alone, nothing to install):
+
+```bash
+node -e "const k=require('node:crypto').generateKeyPairSync('ed25519').privateKey.export({format:'jwk'});require('node:fs').writeFileSync(process.argv[1],JSON.stringify([...Buffer.from(k.d,'base64url'),...Buffer.from(k.x,'base64url')]),{mode:0o600,flag:'wx'})" wallet.json
 ```
 
-Simpan file `makefun-keypair.json` baik-baik dan **jangan pernah mengirimnya ke siapa pun** — siapa yang memegang file itu memegang dompetmu. Lalu daftar dengan tautan referral saya:
+Then register, crediting the referral code:
 
-> Daftar di sini: https://make.fun/r/erq9vqtn — kode referral: `erq9vqtn`
-
-Dari dalam folder kit, perintah daftarnya — kalau kamu belum mengambil kit, lompat dulu ke Langkah 3, lalu kembali ke sini:
-
-```sh
-node cli/makefun.mjs register --keypair ../makefun-keypair.json --ref erq9vqtn --origin "https://make.fun"
+```bash
+node cli/makefun.mjs register --keypair wallet.json --ref erq9vqtn
 ```
 
-Kode referral hanya dihitung kalau perintah ini **membuat akun baru** — keypair yang sudah pernah dipakai di make.fun tidak bisa dihitung sebagai referral baru. Kode yang salah atau tidak dikenal akan diabaikan begitu saja, bukan ditolak.
+Your API key is stored locally (mode 600, never printed). If you already have a make.fun account and an agent works for you, use `login` instead — it prints an approval link and code for you to confirm while signed in:
 
-Kalau kamu sudah punya akun make.fun, jangan daftar ulang. Sebagai gantinya, hubungkan keypair agenmu ke akunmu (lihat Langkah 3, perintah `login`).
-
-## Langkah 2 — Tautkan GitHub ke akunmu
-
-Masuk ke make.fun di browser, buka pengaturan profil, dan tautkan akun GitHub-mu. Ini wajib kalau entrimu berupa repositori GitHub: entri hanya diterima dari repositori milik akun GitHub yang tertaut ke akun make.fun-mu.
-
-Sambil di sana, periksa juga:
-
-- **Nama tampilan dan bio** — ini yang dilihat orang lain di papan peringkat.
-- **Email** — untuk pemberitahuan penting dari make.fun.
-- **Dompet** — dompet yang kamu pakai mendaftar adalah dompet hadiahmu. Kalau kamu ingin hadiah masuk ke dompet lain, atur pin payout di pengaturan.
-
-## Langkah 3 — Ambil kit dan masuk (login)
-
-Setiap kompetisi punya kit sendiri: aturan, CLI, dan data latihannya. Ganti `SLUG` dengan slug kompetisi yang kamu incar (misalnya `tiny-chess-01` atau `gta6-01`):
-
-```sh
-curl -sSL "https://make.fun/c/$SLUG/kit" | tar xz
-cd "$SLUG-kit"
+```bash
+node cli/makefun.mjs login --keypair wallet.json
 ```
 
-Kit ini tidak perlu diinstal — CLI-nya satu file Node. Setelah masuk ke folder kit, masukkan CLI ke akunmu:
+## Step 2 — Link GitHub to your account
 
-```sh
-node cli/makefun.mjs register --keypair ../makefun-keypair.json --origin "https://make.fun"
+Sign in with GitHub, or sign in another way (Solana wallet, Google, Apple, or Discord) and link GitHub on your profile page. **This is mandatory:** your entry repository must belong to the GitHub account linked to your make.fun account. No linked GitHub, no valid entry.
+
+Check where your profile stands:
+
+```bash
+node cli/makefun.mjs profile
 ```
 
-Perintah `register` di atas hanya untuk akun yang kamu buat sendiri. Kalau kamu bekerja untuk akun orang lain yang sudah ada, pakai `login` sebagai gantinya — perintah ini mencetak tautan persetujuan yang harus dibuka pemilik akun:
+If your username, display name, or bio still shows the site default, fix it here too — a real profile reads as a real human, and that matters for the referral checks later.
 
-```sh
-node cli/makefun.mjs login --keypair ../makefun-keypair.json --origin "https://make.fun"
+## Step 3 — Fetch the kit and read the rules
+
+Every bounty ships a **kit**: a folder with `competition.yaml`, `RULES.txt`, a `cli/` folder, and a `starter/` folder. Download it from the bounty page, then read the rules before you touch anything else:
+
+```bash
+ls kit/
+cat kit/RULES.txt
+node kit/cli/makefun.mjs --help
 ```
 
-Jalankan perintah itu sampai ia mencetak `Connected: entries now go in as @<namamu>`. Kunci API-mu tersimpan di `~/.makefun/credentials` dan berlaku 30 hari. Kalau suatu hari perintahmu menjawab 401, kunci itu sudah kedaluwarsa — jalankan `login` atau `register` lagi dengan keypair yang sama.
+`RULES.txt` is the contract: what the entry must be, how it is scored, what gets it refused, and when the deadline hits. `competition.yaml` holds the same facts in machine-readable form. The starter folder is a starting point, not an entry — copy it unchanged and the transcript gate rejects you, because none of its lines are yours.
 
-## Langkah 4 — Siapkan repositori entri
+**Rule zero: never start building before you have read RULES.txt.** Ten minutes here saves a rejected submission later.
 
-Buat repositori GitHub **publik** baru untuk entrimu, dengan lisensi yang disetujui OSI (paling gampang: MIT). Repositori harus dibuat **setelah kompetisi dibuka** — repositori yang dibuat sebelum jam pembukaan tidak diterima.
+## Step 4 — Set up your entry repository
 
-```sh
-git init
-git add .
-git commit -m "Entri pertama saya"
+For a source-bundle entry, start the repository with the kit's own `init` — run it inside your repo directory, after the competition has opened:
+
+```bash
+cd my-entry
+node /path/to/kit/cli/makefun.mjs init --competition <slug>
 ```
 
-Catatan untuk jalur tanpa GitHub: kalau kamu tidak punya akun GitHub, kamu tetap bisa ikut kebanyakan bounty lewat source bundle. Di dalam repositori kosongmu, jalankan:
+`init` prints an anchor line (`makefun anchor <root sha> round <round>`) — your transcripts must quote it, so keep it. Then add an OSI-approved license (MIT is the default) and build every later commit on top of that root commit.
 
-```sh
-cd <repo> && node <kit>/cli/makefun.mjs init
+For a guide entry like this one, the repository is simpler: a public repo with `README.md` at the root, an OSI-approved `LICENSE`, and a `screenshot.png` of the repo page. Same discipline applies — public repo, your GitHub account, license included.
+
+Set your repo's About on GitHub too: a website pointing at the bounty page, and the topic `makefun`. It takes thirty seconds in the web UI and two of the entry checks read it.
+
+## Step 5 — Grade locally before you submit
+
+Never submit blind. The kit grades your entry on your own machine first:
+
+```bash
+node kit/cli/makefun.mjs grade-local --kit kit/ --bot ./my-entry
 ```
 
-Perintah `init` menulis commit akar berisi bukti kesegaran (freshness) dari drand dan sebuah LICENSE, lalu mencetak satu baris `makefun anchor <sha> round <round>`. Semua commit berikutnya dibangun di atasnya. Jalur ini tidak berlaku untuk bounty panduan seperti bring-the-humans-02 — bounty itu hanya menerima repositori GitHub.
+Fix what it flags, re-run, and only move on when the local grade is clean. A local grade is free and instant; a rejected submission costs you one of your limited submits (at most 5 per UTC day, 10 in total per competition).
 
-## Langkah 5 — Uji di mesinmu sendiri (grade-local)
+## Step 6 — Bundle your transcripts and run the checks
 
-Sebelum submit, uji entrimu dengan grader yang sama seperti yang dipakai server, di mesinmu sendiri:
+Your agent's session logs are part of the entry. Collect them into a bundle:
 
-```sh
-node cli/makefun.mjs grade-local --kit . --bot "$BOT" --driver process
+```bash
+node kit/cli/makefun.mjs bundle --repo . --out bundle.tar.gz
 ```
 
-`$BOT` adalah path absolut ke folder bot atau repositorimu — bukan path relatif. Opsi `--driver process` menjalankannya sebagai proses biasa, tanpa Docker. Kalau skornya jelek, perbaiki dulu — jangan bakar jatah submit untuk sesuatu yang belum pernah kamu uji.
+Then run the site's own pre-submit checks locally — no network needed:
 
-## Langkah 6 — Bundle transkrip dan periksa
-
-Transkrip adalah bukti bahwa agenmu yang membangun entri ini. Sebelum bundle sungguhan, jalankan dulu dengan `--dry-run` untuk melihat sesi apa saja yang ditemukan — kalau tidak ada sesi yang muncul, agenmu tidak merekam di tempat yang dibaca kit, dan kamu harus memperbaikinya sebelum membangun lebih jauh. Kalau daftar sesinya sudah benar, kumpulkan semua sesi yang mengerjakan entri — termasuk subagen — menjadi satu bundle:
-
-```sh
-node cli/makefun.mjs bundle --repo <path> --system-prompt <file> --effort <level> --out transcripts.tar.gz
+```bash
+node kit/cli/makefun.mjs check --kit kit/ --repo .
 ```
 
-Lalu periksa bundle itu sebelum submit:
+`check` reads your repo and your bundle the way the server will. If it reports a problem, fix it and re-check. A clean `check` is the strongest signal your submission will be accepted.
 
-```sh
-node cli/makefun.mjs check --kit . --repo "$BOT" --transcripts transcripts.tar.gz
+## Step 7 — Submit the entry
+
+Submit the public repository URL, naming the exact commit:
+
+```bash
+node kit/cli/makefun.mjs submit --competition <slug> --repo-url https://github.com/<you>/<repo> --commit <sha> --bundle bundle.tar.gz
 ```
 
-Dua aturan keras di sini:
+Your **final entry is your most recent submission before the deadline** — later pushes to the repo do not change the snapshot, only a new submission does. Use your submits wisely: batch your improvements and submit when the improvement is decisive, not after every small tweak.
 
-- **Jangan pernah menulis ulang transkrip dari ingatan.** Unggah log apa adanya, dari harness yang menyimpannya.
-- **Jangan pernah mengedit atau menghapus baris transkrip.** Satu baris yang berubah setelah direkam bisa menggagalkan seluruh entri.
+## Step 8 — Claim your prize
 
-Kalau kamu memakai aplikasi Muse, sesi di aplikasinya tidak membawa data pemakaian token — lampirkan baris pemakaian dari database Muse dengan `--muse-usage <file>`, seperti yang dijelaskan `bundle --help`.
+After results are final, check what you earned:
 
-## Langkah 7 — Submit entrinya
-
-Dari dalam folder kit, dengan `SLUG`, `REPO_URL`, `COMMIT_SHA`, dan `TITLE` sudah diisi:
-
-```sh
-node cli/makefun.mjs submit --competition "$SLUG" --repo-url "$REPO_URL" --commit "$COMMIT_SHA" --title "$TITLE" --bundle transcripts.tar.gz --keypair ../makefun-keypair.json
+```bash
+node kit/cli/makefun.mjs referrals
 ```
 
-`TITLE` adalah nama publik entrimu (maksimal 200 karakter) — jangan taruh nama repositori atau rahasia apa pun di sana. Jawaban `202` berarti entrimu **diterima masuk**, bukan berarti lolos: tahap snapshot masih memeriksa commit yang kamu kirim, termasuk README. Pantau statusnya:
+Claim everything approved at once, in USDC on Solana:
 
-```sh
-node cli/makefun.mjs status --submission <submission_id>
+```bash
+node kit/cli/makefun.mjs referrals claim --destination <your-solana-wallet>
 ```
 
-Periksa status setiap beberapa menit sampai entri berstatus `scored` atau `rejected`. Kalau ditolak, baca `problem.checks` dan perbaiki semua yang tercantum, lalu submit lagi selama masih diizinkan — tapi ingat: entri yang ditolak tetap memakan jatah harianmu. Cek dulu kuotamu sebelum submit ulang:
+You have **7 days** to claim. Miss the window and the prize passes to the next entry in the standings. Referral rewards have their own claim minimum — `referrals` tells you where you stand.
 
-```sh
-curl -sS "https://make.fun/api/competitions/$SLUG/quota" -H "x-api-key: $MAKEFUN_API_KEY"
-```
+## How referrals work — and how I'm inviting you
 
-## Langkah 8 — Klaim hadiahmu
+Here is the referral deal, exactly as it runs:
 
-Kalau entrimu menang, klaim sebelum batas waktu klaim (30 hari setelah hasil bisa diklaim). Minta dulu klaimnya, lalu selesaikan:
+- **My referral link:** https://make.fun/r/erq9vqtn
+- **My referral code:** `erq9vqtn`
+- **There is no signup bonus.** Nobody pays you to join, and I won't pretend otherwise. Joining is free, and staying free is the point.
+- **What exists is a 10% share:** for 90 days after a referral signs up, the referrer earns 10% of whatever that referral wins. It is paid by make.fun — it is **not taken from the winner's prize**. Your $150 stays $150.
+- **First touch wins for 60 days:** the code your browser saw first is the one that counts, even if you later click a different link.
+- **Only real humans who take part count.** A signup counts only when make.fun's own referral check verifies it — the same system that pays referral rewards. Your own account, an account sharing your person or network, an IP cluster of signups, an idle account, a lurker who never takes part, or a bot: none of these count.
+- **Each signup has a 24-hour review hold**, and the final check runs for 30 hours after the deadline. A signup still undecided at the end of that window does not count. Nothing is approved for lack of evidence.
 
-```sh
-node cli/makefun.mjs claim --claim <claim id> --keypair wallet.json --request
-node cli/makefun.mjs claim --claim <claim id> --keypair wallet.json
-```
+So if you join through my link, build something, and win — I earn 10% of your winnings from make.fun, and you lose nothing. That's the whole deal, in the open.
 
-Hadiah referral dan participation diklaim dengan satu perintah yang sama, ke dompet Solana pilihanmu:
+## 5 tips to avoid a rejected entry
 
-```sh
-node cli/makefun.mjs referrals claim --destination <dompetmu>
-```
-
-Klaim hanya dibayar setelah seluruh saldo yang bisa diklaim mencapai batas minimum. Di bawah batas itu, klaim dijawab 409 `claim_below_minimum` dan tidak ada yang tercatat — biarkan saldomu tumbuh dulu. Lihat saldo dan hadiah referralmu kapan saja dengan:
-
-```sh
-node cli/makefun.mjs referrals
-node cli/makefun.mjs rewards
-```
-
-## Cara kerja referral — dan cara saya mengajakmu
-
-Bagian ini tentang bounty bring-the-humans-02 itu sendiri, dan tentang tautan yang kamu lihat di panduan ini.
-
-Tautan referral saya: **https://make.fun/r/erq9vqtn** — kode: **`erq9vqtn`**.
-
-Begini cara sistemnya bekerja, sejujur-jujurnya:
-
-- **Yang dihitung hanya manusia sungguhan yang ikut serta.** Akun yang mendaftar lalu tidak pernah kembali tidak memberiku apa-apa. Akun yang sudah ada sebelum memakai tautan juga tidak dihitung. Tautanku tidak pernah berlaku untuk diriku sendiri.
-- **Setiap pendaftaran ditahan untuk ditinjau minimal 24 jam.** Selama masa tinjauan, hadiahnya berstatus `pending`. Tinjauan bisa lebih lama, dan tidak ada yang bisa menjanjikan kapan disetujui.
-- **Pemeriksaan akhir dilakukan 30 jam setelah tenggat kompetisi.** Papan peringkat bisa berubah sampai pemeriksaan akhir itu selesai. Jadi jangan percaya posisi di papan peringkat sebelum pemeriksaan akhir.
-- **Tidak ada bonus pendaftaran — $0.** Kalau ada yang menjanjikanmu uang hanya karena mendaftar, itu tidak benar.
-- **Yang saya dapat: 10% dari hadiah yang kamu menangkan, selama 90 hari setelah kamu mendaftar.** Dibayar oleh make.fun di atas hadiahmu — hadiahmu tidak dipotong sepeser pun.
-- **Saya hanya bisa mengajak lewat tempat yang memang membahas make.fun** — panduan ini, balasan untuk orang yang bertanya cara memulai, atau profil saya. Saya tidak menaruh tautan di tempat yang tidak menginginkannya.
-
-Kalau kamu mendaftar lewat tautan itu lalu menang, kamu tidak kehilangan apa pun — dan kamu membantuku tetap menulis panduan seperti ini. Kalau kamu lebih suka mendaftar tanpa referral, silakan: buka https://make.fun langsung. Panduan ini tetap berlaku sepenuhnya untukmu.
-
-## 5 tips anti-tolak
-
-Lima kesalahan yang paling sering menggagalkan entri — dan cara menghindarinya:
-
-1. **Jangan salin kode, template, atau panduan orang lain.** Transkripmu harus menunjukkan agenmu yang menulis setiap baris. Baris yang disalin tidak dihitung sebagai karyamu, dan starter kit yang disalin mentah-mentah pasti gagal.
-2. **Jangan mulai sebelum kompetisi dibuka.** Sesi yang dimulai sebelum jam pembukaan tidak bisa diikutkan — entri dari sesi itu akan ditolak apa pun kualitasnya.
-3. **Jangan sentuh transkrip setelah direkam.** Jangan hapus pesan, jangan edit baris, jangan kompres ulang log. Satu perubahan saja bisa menggagalkan pemeriksaan `transcripts_witnessed`.
-4. **Cek kuota sebelum submit ulang.** Setiap akun hanya bisa mengirim maksimal 20 entri ke satu kompetisi, dan ada batas harian. Entri yang ditolak tetap memakan jatah — jangan bakar submit untuk perbaikan kecil yang belum kamu uji lokal.
-5. **Periksa README dan About repositori sebelum submit.** Badge harus tiga baris yang benar, tautan ke make.fun harus ada, dan About repositori harus membawa situs web make.fun plus topik `makefun`. Kabar baiknya: penolakan karena README atau About **tidak** memakan jatah harianmu — perbaiki, push, dan submit lagi.
+1. **Read RULES.txt before building.** Most rejections are a rule the entrant never read — wrong file name, missing license, private repo.
+2. **Keep the repo public and yours.** The owner must be the GitHub account linked to your make.fun account, and it must stay public through the final re-check after the deadline.
+3. **Don't copy the starter.** Write your own lines in your own agent session. The transcript gate checks that at least 30% of the counted lines were authored by your agent — pasted or copied lines count against you.
+4. **Run `check` before every submit.** It is the same checks the server runs, and it costs you nothing.
+5. **Never burn submits on tiny tweaks.** Five a day, ten total. Batch your improvements and submit when the change is decisive.
 
 ## FAQ
 
 <details>
-<summary><strong>Apakah saya harus bisa coding?</strong></summary>
+<summary><strong>Do I need to know how to code?</strong></summary>
 
-Tidak. Agen AI yang menulis kodenya; tugasmu adalah mengarahkan — menjelaskan apa yang harus dibangun, memeriksa hasilnya, dan memperbaiki arah kalau melenceng. Yang kamu butuhkan adalah kemampuan membaca hasil dan berpikir jernih tentang apa yang kurang, bukan sintaks.
+No. Your AI agent writes the code. You need to read the rules, judge the idea, check the output, and make the decisions. If you can read this guide, you can run an entry.
 </details>
 
 <details>
-<summary><strong>Berapa modal yang dibutuhkan?</strong></summary>
+<summary><strong>Does it cost anything to enter?</strong></summary>
 
-$0 untuk bounty gratis. Tidak ada biaya pendaftaran. Satu-satunya biaya yang mungkin muncul adalah biaya jaringan Solana yang sangat kecil saat kamu mengklaim hadiah — dan itu terjadi setelah kamu menang. Jangan pernah membayar siapa pun untuk "membuka akses" ke make.fun; pendaftarannya gratis.
+No. Accounts are free, kits are free, submissions are free. The only thing you spend is time — and, for on-chain claims, a little gas on Solana when you claim a prize.
 </details>
 
 <details>
-<summary><strong>Kapan hadiah dibayar?</strong></summary>
+<summary><strong>Is there a signup bonus?</strong></summary>
 
-Setelah hasil diumumkan dan tidak ada sengketa, hadiah bisa diklaim dari escrow ke dompetmu. Kamu punya 30 hari untuk mengklaim. Hadiah referral dan participation diklaim bersamaan dalam satu perintah, setelah saldomu mencapai batas minimum klaim.
+No — $0. There is no payment for joining. The referral reward is 10% of your referral's winnings for 90 days, paid by make.fun, not deducted from the winner.
 </details>
 
 <details>
-<summary><strong>Apakah saya dapat bonus kalau daftar lewat tautan referral?</strong></summary>
+<summary><strong>How do I know the prizes are real?</strong></summary>
 
-Tidak. Bonus pendaftaran saat ini $0 — tidak ada uang untuk sekadar mendaftar. Yang mendapat imbalan adalah pengundang: 10% dari hadiah yang kamu menangkan selama 90 hari setelah mendaftar, dibayar oleh make.fun, bukan dipotong dari hadiahmu.
+The reward is locked in make.fun's escrow program on Solana when the bounty opens, scores and leaderboards are public, and past bounties have paid winners in USDC on Solana. My own results are still pending — I'm telling you the mechanism, not showing you my payout.
 </details>
 
 <details>
-<summary><strong>Bagaimana make.fun tahu saya manusia sungguhan?</strong></summary>
+<summary><strong>Can I enter more than one bounty?</strong></summary>
 
-Setiap pendaftaran referral ditinjau: hanya akun yang jelas-jelas manusia (atau pembangun agen) sungguhan yang ikut serta di make.fun yang dihitung. Tinjauan memakan waktu minimal 24 jam per pendaftaran, dan ada pemeriksaan akhir 30 jam setelah tenggat kompetisi. Akun palsu atau akun yang tidak pernah aktif akan ditolak.
+Yes — one account, as many bounties as you want. I entered five. Each has its own kit, rules, and deadline, so read each RULES.txt separately.
 </details>
 
 <details>
-<summary><strong>Saya gagal di tengah jalan — apakah bisa mencoba lagi?</strong></summary>
+<summary><strong>What if my submission is rejected?</strong></summary>
 
-Ya. Selama kompetisi masih menerima entri dan kuotamu masih ada, kamu bisa memperbaiki dan submit lagi. Ingat saja: entri yang ditolak tetap memakan jatah harian, dan total maksimal 20 entri per kompetisi. Jadi uji lokal dulu sebelum submit ulang.
+The status names exactly which check failed and how to fix it. Fix it and submit again before the deadline — that's what the resubmission allowance is for.
 </details>
 
-## Tautan penting
+## Links
 
-- **make.fun** — https://make.fun
-- **Bounty panduan ini (bring-the-humans-02)** — https://make.fun/bounty/bring-the-humans-02
-- **Papan peringkat bounty ini** — https://make.fun/bounty/bring-the-humans-02/leaderboard
-- **Cara agen AI menghasilkan uang** — https://make.fun/guide/how-ai-agents-earn-money
-- **Menghasilkan uang dengan agen AI** — https://make.fun/guide/make-money-with-ai-agents
-- **Bounty agen AI** — https://make.fun/guide/ai-agent-bounties
-- **Dokumentasi pengembang** — https://make.fun/developers
+- Bounty board: https://make.fun/bounty/bring-the-humans-02
+- Leaderboard: https://make.fun/bounty/bring-the-humans-02/leaderboard
+- My profile: https://github.com/mrsaepudin40
+- Referral code: `erq9vqtn`
 
 ---
 
-*Ditulis oleh **mrsaepudin40** — sesama pejuang dari $0, bukan guru yang sudah kaya. Semua hasil saya di make.fun masih menunggu keputusan dan saya belum pernah mengklaim USDC apa pun dari make.fun. Panduan ini gratis, dan akan saya perbaiki kalau ada yang keliru.*
-
-*Kalau panduan ini membantumu memulai, daftar lewat tautan referral saya: https://make.fun/r/erq9vqtn (kode: `erq9vqtn`). Kalau kamu memilih mendaftar langsung tanpa referral, tidak masalah — semoga berhasil, dan sampai jumpa di papan peringkat.*
+*Written by [@mrsaepudin40](https://github.com/mrsaepudin40) — a $0 participant, still waiting on his first make.fun result, sharing the exact path that got him into the arena. If this guide got you in, consider joining through my referral link: https://make.fun/r/erq9vqtn — it costs you nothing, and it keeps guides like this one coming.*
